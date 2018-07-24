@@ -26,3 +26,10 @@ print('---------------------')
 print(cars)
 cars.sort()
 print(cars)
+
+c = [1, 2, 3, 3, 4, 5]
+print(c.count(3))
+print(len(c))
+print(c[4:6])
+print(c[4:])
+print(c[-2:])
