@@ -16,3 +16,23 @@ def calculate_net_income(state, gross_income):
 
 result = int(calculate_net_income('OR', 150000))
 print('Your net income after all the heavy taxes is: ' + str(result))
+
+
+# printing string by seperating even odd letters
+def seperate_string(S):
+    even_string = []
+    odd_string = []
+    index = 0
+    for letter in S:
+        if index % 2 == 0:
+            even_string.append(letter)
+        else:
+            odd_string.append(letter)
+        index += 1
+    even = "".join(even_string)
+    odd = "".join(odd_string)
+    print(even + " " + odd)
+
+
+S = input()
+seperate_string(S)
