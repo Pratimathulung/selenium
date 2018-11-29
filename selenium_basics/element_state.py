@@ -16,12 +16,13 @@ class ElementState(unittest.TestCase):
 
         element = self.driver.find_element_by_name("q")
         element_state = element.is_enabled()
-        print('Element is enabled?? ' + str(element_state))
+        assert element_state is True
 
         if element_state is True:
             element.send_keys('Coding is fun')
             element.send_keys(Keys.RETURN)
             time.sleep(2)
+            assert self.driver.find_element_by_id('resultStats').is_displayed()
 
     def tearDown(self):
         self.driver.close()
