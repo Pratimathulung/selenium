@@ -27,7 +27,8 @@ class ExplicitWaitDemo(unittest.TestCase):
         return_date.click()
         return_date.send_keys("12/28/2018")
         time.sleep(5)
-        self.driver.find_element_by_xpath("/html//form[@id='gcw-flights-form-hp-flight']//button[@type='submit']").click()
+        self.driver.find_element_by_xpath(
+            "/html//form[@id='gcw-flights-form-hp-flight']//button[@type='submit']").click()
 
         wait = WebDriverWait(self.driver, 10, poll_frequency=1,
                              ignored_exceptions=[NoSuchElementException, ElementNotVisibleException,
