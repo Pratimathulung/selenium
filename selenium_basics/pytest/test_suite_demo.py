@@ -1,7 +1,7 @@
 
 import unittest
-from selenium_basics.test_class1 import TestClass1
-from selenium_basics.test_class2 import TestClass2
+from selenium_basics.pytest.test_class1 import TestClass1
+from selenium_basics.pytest.test_class2 import TestClass2
 from selenium_basics.switch_to_window import SwitchWindow
 
 # get all tests from test_class1 and test_class2
