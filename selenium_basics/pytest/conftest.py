@@ -3,12 +3,12 @@ import pytest
 
 @pytest.yield_fixture()
 def setUp():
-    print("Running confest demo2 method setUp")
+    print("Running method level setUp")
     yield
-    print("Running confest demo3 method tearDown")
+    print("Running method level tearDown")
 
 @pytest.yield_fixture(scope='module')
 def oneTimeSetUp():
-    print("Running confest demo one time setUp")
+    print("Running one time setUp")
     yield
-    print("Running confest demo one time tearDown")
+    print("Running one time tearDown")
